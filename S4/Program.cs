@@ -62,7 +62,14 @@ namespace S4
             Complex C3 = C1 - C2;
             Console.WriteLine("======================");
             Console.WriteLine($"C3 = {C3}");
+
+            C3++;
+            Console.WriteLine("======================");
+            Console.WriteLine($"C3 = {C3}");
             
+            C3--;
+            Console.WriteLine("======================");
+            Console.WriteLine($"C3 = {C3}");
 
 
             #endregion

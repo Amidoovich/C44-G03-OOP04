@@ -45,6 +45,22 @@ namespace S4.Overloading
             };
         }
 
+        public static Complex operator ++(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Img = C?.Img ?? 0
+            };
+        }
+        public static Complex operator --(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Img = C?.Img ?? 0
+            };
+        }
         #endregion
     }
 }
