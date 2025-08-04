@@ -61,6 +61,33 @@ namespace S4.Overloading
                 Img = C?.Img ?? 0
             };
         }
+
+        public static bool operator >(Complex left , Complex right)
+        {
+            // left.real > right.real => true
+            // left,real < right.real => false
+            // left.real == right.real
+            // left.img > right.img => true
+            // left.img < right.img => false
+            
+            if(left.Real == right.Real)
+                return left.Img > right.Img;
+            else
+                return left.Real > right.Real;
+
+
+        }
+        public static bool operator <(Complex left , Complex right)
+        {
+
+            
+            if(left.Real == right.Real)
+                return left.Img < right.Img;
+            else
+                return left.Real < right.Real;
+
+
+        }
         #endregion
     }
 }

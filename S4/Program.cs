@@ -48,13 +48,13 @@ namespace S4
             Complex C1 = new Complex()
             {
                 Real = 10,
-                Img = 5
+                Img = 1
             };
             Console.WriteLine($"C1 = {C1}");
 
             Complex C2 = new Complex()
             {
-                Real = 6,
+                Real = 10,
                 Img = 2
             };
             Console.WriteLine($"C2 = {C2}");
@@ -71,6 +71,10 @@ namespace S4
             Console.WriteLine("======================");
             Console.WriteLine($"C3 = {C3}");
 
+            if(C1 > C2)
+                Console.WriteLine("C1 > C2");
+            else
+                Console.WriteLine("C1 < C2");
 
             #endregion
 
