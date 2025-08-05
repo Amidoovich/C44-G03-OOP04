@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 using S4.Overloading;
 
 namespace S4
@@ -42,7 +43,7 @@ namespace S4
             //Console.WriteLine(); 
             #endregion
 
-            #region MyRegion
+            #region Operator Overloading
 
             // 5 + 4i
             Complex C1 = new Complex()
@@ -59,23 +60,30 @@ namespace S4
             };
             Console.WriteLine($"C2 = {C2}");
 
-            Complex C3 = C1 - C2;
-            Console.WriteLine("======================");
-            Console.WriteLine($"C3 = {C3}");
+            //Complex C3;
+            //Console.WriteLine("======================");
+            //Console.WriteLine($"C3 = {C3}");
 
-            C3++;
-            Console.WriteLine("======================");
-            Console.WriteLine($"C3 = {C3}");
-            
-            C3--;
-            Console.WriteLine("======================");
-            Console.WriteLine($"C3 = {C3}");
+            //C3++;
+            //Console.WriteLine("======================");
+            //Console.WriteLine($"C3 = {C3}");
 
-            if(C1 > C2)
-                Console.WriteLine("C1 > C2");
-            else
-                Console.WriteLine("C1 < C2");
+            //C3--;
+            //Console.WriteLine("======================");
+            //Console.WriteLine($"C3 = {C3}");
 
+            //if(C1 > C2)
+            //    Console.WriteLine("C1 > C2");
+            //else
+            //    Console.WriteLine("C1 < C2");
+
+            #endregion
+
+            #region Casting Operator
+            //int X = (int)C1;
+
+            string X = C1;
+            Console.WriteLine(X);
             #endregion
 
         }
