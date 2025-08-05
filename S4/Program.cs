@@ -59,6 +59,17 @@ namespace S4
             //Manager manager = new Manager();
             //manager.Work();
             #endregion
+            #region Q5
+            //BaseClass baseClass = new BaseClass();
+            //baseClass.DisplayMessage();
+            //DerivedClass1 derivedClass1 = new DerivedClass1();
+            //derivedClass1.DisplayMessage();
+            //DerviedClass2 derivedClass2 = new DerviedClass2();
+            //derivedClass2.DisplayMessage();
+            #endregion
+            #endregion
+            #region Part 02
+
             #endregion
         }
     }
