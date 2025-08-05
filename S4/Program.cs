@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 using S4.Overloading;
+using S4.Overriding;
 
 namespace S4
 {
@@ -50,7 +51,14 @@ namespace S4
             //Console.WriteLine($"C3 = {C3}\n");
 
             #endregion
-
+            #region Q4
+            //Employee employee = new Employee();
+            //Console.WriteLine("Employee : ");
+            //employee.Work();
+            //Console.WriteLine("Manager :");
+            //Manager manager = new Manager();
+            //manager.Work();
+            #endregion
             #endregion
         }
     }
