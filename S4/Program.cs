@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography;
 using S4.Overloading;
+using S4.Overriding;
 
 namespace S4
 {
@@ -85,21 +86,39 @@ namespace S4
             //string X = C1;
             //Console.WriteLine(X);
 
-            User userObj = new User()
-            {
-                Id = 10,
-                FullName = "Mostafa Hany",
-                Email = "Mostafa@gmail.com",
-                Password = "p@ssw0rd",
-                SecurityStamp = Guid.NewGuid()
-            };
-            // Manual Mapping
-            UserViewModel userViewModel = (UserViewModel)userObj;
-            Console.WriteLine(userViewModel.Id);
-            Console.WriteLine(userViewModel.FirstName);
-            Console.WriteLine(userViewModel.LastName);
-            Console.WriteLine(userViewModel.Email);
+            //User userObj = new User()
+            //{
+            //    Id = 10,
+            //    FullName = "Mostafa Hany",
+            //    Email = "Mostafa@gmail.com",
+            //    Password = "p@ssw0rd",
+            //    SecurityStamp = Guid.NewGuid()
+            //};
+            //// Manual Mapping
+            //UserViewModel userViewModel = (UserViewModel)userObj;
+            //Console.WriteLine(userViewModel.Id);
+            //Console.WriteLine(userViewModel.FirstName);
+            //Console.WriteLine(userViewModel.LastName);
+            //Console.WriteLine(userViewModel.Email);
             #endregion
+
+            #region Overriding
+
+            //TypeA typeA = new TypeA(1);
+
+            //typeA.A = 10;
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+
+            TypeB typeB = new TypeB(1,2);
+
+            typeB.A = 10;
+            typeB.B = 20;
+            typeB.MyFun01();
+            typeB.MyFun02();
+            #endregion
+
 
         }
     }
