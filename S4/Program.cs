@@ -46,19 +46,19 @@ namespace S4
             #region Operator Overloading
 
             // 5 + 4i
-            Complex C1 = new Complex()
-            {
-                Real = 10,
-                Img = 1
-            };
-            Console.WriteLine($"C1 = {C1}");
+            //Complex C1 = new Complex()
+            //{
+            //    Real = 10,
+            //    Img = 1
+            //};
+            //Console.WriteLine($"C1 = {C1}");
 
-            Complex C2 = new Complex()
-            {
-                Real = 10,
-                Img = 2
-            };
-            Console.WriteLine($"C2 = {C2}");
+            //Complex C2 = new Complex()
+            //{
+            //    Real = 10,
+            //    Img = 2
+            //};
+            //Console.WriteLine($"C2 = {C2}");
 
             //Complex C3;
             //Console.WriteLine("======================");
@@ -82,8 +82,23 @@ namespace S4
             #region Casting Operator
             //int X = (int)C1;
 
-            string X = C1;
-            Console.WriteLine(X);
+            //string X = C1;
+            //Console.WriteLine(X);
+
+            User userObj = new User()
+            {
+                Id = 10,
+                FullName = "Mostafa Hany",
+                Email = "Mostafa@gmail.com",
+                Password = "p@ssw0rd",
+                SecurityStamp = Guid.NewGuid()
+            };
+            // Manual Mapping
+            UserViewModel userViewModel = (UserViewModel)userObj;
+            Console.WriteLine(userViewModel.Id);
+            Console.WriteLine(userViewModel.FirstName);
+            Console.WriteLine(userViewModel.LastName);
+            Console.WriteLine(userViewModel.Email);
             #endregion
 
         }
