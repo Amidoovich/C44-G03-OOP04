@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using S4.Overloading;
 using S4.Overriding;
+using S4.Part02;
 
 namespace S4
 {
@@ -69,6 +70,21 @@ namespace S4
             #endregion
             #endregion
             #region Part 02
+            #region Q3
+            //Duration D1 = new Duration(1, 10, 15);
+            //Console.WriteLine(D1);
+
+            //Duration D1 = new Duration(3600);
+            //Console.WriteLine(D1);
+
+            //Duration D1 = new Duration(7800);
+            //Console.WriteLine(D1);
+
+            //Duration D1 = new Duration(666);
+            //Console.WriteLine(D1); 
+            #endregion
+
+
 
             #endregion
         }
